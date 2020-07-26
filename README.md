@@ -59,7 +59,7 @@ cd systemc-2.3.3 && mkdir objdir && cd objdir
 
 3. Final installation
 ```
-sudo ../configure --prefix=/usr/local/systemc-2.3.3/
+sudo ../configure CXXFLAGS=-std=c++11 --prefix=/usr/local/systemc-2.3.3/
 sudo make -j$(nproc)
 sudo make install
 ```
